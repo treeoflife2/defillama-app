@@ -133,7 +133,9 @@ function App({ Component, pageProps }: AppProps) {
 		!router.pathname.startsWith('/ai') &&
 		!router.pathname.startsWith('/mcp') &&
 		!router.pathname.startsWith('/account') &&
-		!router.pathname.startsWith('/subscription')
+		!router.pathname.startsWith('/subscription') &&
+		!router.pathname.includes('/ai/chat') && 
+		!router.pathname.includes('/superluminal')
 
 	useUmamiIdentityTracker()
 
